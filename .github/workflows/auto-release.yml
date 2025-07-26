@@ -1,0 +1,39 @@
+name: 自动发布新版本
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 生成版本号
+        run: echo "TAG_NAME=v$(date -u +'%Y%m%d-%H%M')" >> $GITHUB_ENV
+
+      - name: 打包产物文件（已排除开发文件）
+        run: |
+          mkdir "Native·iOS"
+          # 使用 rsync 并通过 --exclude 参数排除了无需包含在最终产物中的文件
+          rsync -av --exclude={'.git*','.github','.gitignore','README.*','LICENSE','CHANGELOG.md','*.hskin'} . "Native·iOS/"
+          
+          zip -r native.zip "Native·iOS"
+          mv native.zip native.hskin
+
+      - name: 创建并发布 Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: "Release ${{ env.TAG_NAME }}"
+          body: |
+            自动发布版本 ${{ env.TAG_NAME }}
+            产物文件：`native.hskin`
+          files: native.hskin
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
