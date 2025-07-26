@@ -603,9 +603,9 @@ keyboardLayout:
   - HStack:
       subviews:
         - Cell: 123Button
-        - Cell: dotButton
-        - Cell: spaceButton
         - Cell: cnenButton
+        - Cell: spaceButton
+        - Cell: dotButton
         - Cell: enterButton
 
 keyboardStyle:

@@ -54,7 +54,7 @@ keyboardBackgroundStyle:
   size:
     height: 1/4
   backgroundStyle: 2_ButtonBackgroundStyle
-  action: {openURL: https://www.baidu.com/s?wd=#selectText}
+  action: {openURL: https://www.google.com/s?wd=#selectText}
 
 2_ButtonBackgroundStyle:
   animation: animation
@@ -119,7 +119,7 @@ keyboardBackgroundStyle:
   size:
     height: 1/4
   backgroundStyle: 6_ButtonBackgroundStyle
-  action: {openURL: xhsdiscover://search/result?keyword=#pasteboardContent}
+  action: {openURL: wechat://}
 
 6_ButtonBackgroundStyle:
   animation: animation
@@ -135,7 +135,7 @@ keyboardBackgroundStyle:
   size:
     height: 1/4
   backgroundStyle: 7_ButtonBackgroundStyle
-  action: {openURL: zhihu://search?q=#pasteboardContent}
+  action: {openURL: alipay://}
 
 7_ButtonBackgroundStyle:
   animation: animation
@@ -183,7 +183,7 @@ keyboardBackgroundStyle:
   size:
     height: 1/4
   backgroundStyle: 10_ButtonBackgroundStyle
-  action: {openURL: baidumap://map/place/search?query=#pasteboardContent}
+  action: {openURL: youtube://}
 
 10_ButtonBackgroundStyle:
   animation: animation

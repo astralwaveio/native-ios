@@ -626,7 +626,7 @@ keyboardLayout:
         - HStack:
             subviews:
               - Cell: symButton
-              - Cell: dotButton
+              - Cell: cnenButton
               - Cell: spaceButton
   - VStack:
       style: columnStyle2
@@ -684,7 +684,7 @@ keyboardLayout:
         - HStack:
             subviews:
               - Cell: spaceButton
-              - Cell: cnenButton
+              - Cell: dotButton
               - Cell: enterButton
 
 columnStyle1:
