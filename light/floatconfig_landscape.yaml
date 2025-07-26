@@ -1,6 +1,6 @@
 按键背景: &key_bg
   type: original
-  insets: {top: 6, left: 5, bottom: 6, right: 5}
+  insets: { top: 6, left: 5, bottom: 6, right: 5 }
   normalColor: FCFCFE
   highlightColor: B7BCC4
   cornerRadius: 7
@@ -43,7 +43,7 @@ floatTargetScale:
   y: 0.7
 
 keyboardStyle:
-  insets: {top: 8, left: 8, bottom: 8, right: 8}
+  insets: { top: 8, left: 8, bottom: 8, right: 8 }
   backgroundStyle: keyboardBackgroundStyle
 
 keyboardBackgroundStyle:
@@ -61,7 +61,7 @@ hamsterButton:
   foregroundStyle:
     - hamsterButtonForegroundStyle1
     - hamsterButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/main}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/main }
 
 hamsterButtonForegroundStyle1:
   animation: animation
@@ -80,7 +80,7 @@ uploadButton:
   foregroundStyle:
     - uploadButtonForegroundStyle1
     - uploadButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/uploadInputSchema}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/uploadInputSchema }
 
 uploadButtonForegroundStyle1:
   animation: animation
@@ -99,7 +99,7 @@ soundsButton:
   foregroundStyle:
     - soundsButtonForegroundStyle1
     - soundsButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/feedback}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/feedback }
 
 soundsButtonForegroundStyle1:
   animation: animation
@@ -118,7 +118,7 @@ scriptButton:
   foregroundStyle:
     - scriptButtonForegroundStyle1
     - scriptButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/clipboard?type=script}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/clipboard?type=script }
 
 scriptButtonForegroundStyle1:
   animation: animation
@@ -137,7 +137,7 @@ skinButton:
   foregroundStyle:
     - skinButtonForegroundStyle1
     - skinButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/keyboardSkins}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/keyboardSkins }
 
 skinButtonForegroundStyle1:
   animation: animation
@@ -156,7 +156,7 @@ fileButton:
   foregroundStyle:
     - fileButtonForegroundStyle1
     - fileButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/finder}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/finder }
 
 fileButtonForegroundStyle1:
   animation: animation
@@ -175,7 +175,7 @@ backupButton:
   foregroundStyle:
     - backupButtonForegroundStyle1
     - backupButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/backup}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/backup }
 
 backupButtonForegroundStyle1:
   animation: animation
@@ -194,7 +194,7 @@ deployButton:
   foregroundStyle:
     - deployButtonForegroundStyle1
     - deployButtonForegroundStyle2
-  action: {openURL: hamster://dev.fuxiao.app.hamster/rime?deploy}
+  action: { openURL: hamster://dev.fuxiao.app.hamster/rime?deploy }
 
 deployButtonForegroundStyle1:
   animation: animation

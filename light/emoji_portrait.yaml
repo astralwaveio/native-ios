@@ -454,7 +454,7 @@ collectionCellForegroundStyle:
 #详情页
 descriptionCollection:
   size:
-    #width: 315/375
+  #width: 315/375
   backgroundStyle: descriptionCollectionButtonBackgroundStyle
   type: subClassifiedSymbols
   cellStyle: descriptionCollectionStyle
@@ -487,7 +487,7 @@ returnButtonForegroundStyle:
 
 pageUpButton:
   size:
-    #width: 85/375
+  #width: 85/375
   backgroundStyle: systemButtonBackgroundStyle
   foregroundStyle: pageUpButtonForegroundStyle
   action: pageUp
@@ -503,7 +503,7 @@ pageUpButtonForegroundStyle:
 
 pageDownButton:
   size:
-    #width: 85/375
+  #width: 85/375
   backgroundStyle: systemButtonBackgroundStyle
   foregroundStyle: pageDownButtonForegroundStyle
   action: pageDown
@@ -515,7 +515,7 @@ pageDownButtonForegroundStyle:
 
 lockButton:
   size:
-    #width: 85/375
+  #width: 85/375
   backgroundStyle: |-
     // JavaScript
     function getText() {
@@ -548,7 +548,7 @@ unlockButtonForegroundStyle:
 
 backspaceButton:
   size:
-    #width: 60/375
+  #width: 60/375
   backgroundStyle: backspaceButtonBackgroundStyle
   foregroundStyle: backspaceButtonForegroundStyle
   action: backspace

@@ -5,25 +5,25 @@
 keyboardLayout:
   - HStack:
       subviews:
-        - Cell: 1_Button
-        - Cell: 2_Button
-        - Cell: 3_Button
-        - Cell: 4_Button
-        - Cell: 5_Button
+        - Cell: YouTubeButton
+        - Cell: BilibiliButton
+        - Cell: DouyinButton
+        - Cell: BingButton
+        - Cell: GoogleButton
   - HStack:
       subviews:
-        - Cell: 6_Button
-        - Cell: 7_Button
-        - Cell: 8_Button
-        - Cell: 9_Button
-        - Cell: 10_Button
+        - Cell: TaobaoButton
+        - Cell: JDButton
+        - Cell: GaodeButton
+        - Cell: WechatButton
+        - Cell: AlipayButton
 
 floatTargetScale:
   x: 0.5
   y: 0.7
 
 keyboardStyle:
-  insets: {top: 8, left: 8, bottom: 8, right: 8}
+  insets: { top: 8, left: 8, bottom: 8, right: 8 }
   backgroundStyle: keyboardBackgroundStyle
 
 keyboardBackgroundStyle:
@@ -34,165 +34,125 @@ keyboardBackgroundStyle:
   normalBorderColor: 22222255
   normalLowerEdgeColor: 00000055
 
-1_Button:
+# 搜索按钮
+YouTubeButton:
   size:
     height: 1/4
-  backgroundStyle: 1_ButtonBackgroundStyle
-  action: {openURL: https://cn.bing.com/search?q=#selectText}
+  backgroundStyle: YouTubeButtonBackgroundStyle
+  action: { openURL: youtube://results?search_query=#pasteboardContent }
 
-1_ButtonBackgroundStyle:
+YouTubeButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG4
-  highlightImage:
-    file: 图标
-    image: IMG4
+  normalImage: { file: 图标, image: IMG2 }
+  highlightImage: { file: 图标, image: IMG2 }
   <<: *ub
 
-2_Button:
+BilibiliButton:
   size:
     height: 1/4
-  backgroundStyle: 2_ButtonBackgroundStyle
-  action: {openURL: https://www.baidu.com/s?wd=#selectText}
+  backgroundStyle: BilibiliButtonBackgroundStyle
+  action: { openURL: bilibili://search?keyword=#pasteboardContent }
 
-2_ButtonBackgroundStyle:
+BilibiliButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG1
-  highlightImage:
-    file: 图标
-    image: IMG1
+  normalImage: { file: 图标, image: IMG3 }
+  highlightImage: { file: 图标, image: IMG3 }
   <<: *ub
 
-3_Button:
+DouyinButton:
   size:
     height: 1/4
-  backgroundStyle: 3_ButtonBackgroundStyle
-  action: {openURL: taobao://s.taobao.com?q=#pasteboardContent}
+  backgroundStyle: DouyinButtonBackgroundStyle
+  action: { openURL: snssdk1128://search?keyword=#pasteboardContent }
 
-3_ButtonBackgroundStyle:
+DouyinButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG8
-  highlightImage:
-    file: 图标
-    image: IMG8
+  normalImage: { file: 图标, image: IMG5 }
+  highlightImage: { file: 图标, image: IMG5 }
   <<: *ub
 
-4_Button:
+BingButton:
   size:
     height: 1/4
-  backgroundStyle: 4_ButtonBackgroundStyle
-  action: {openURL: 'openapp.jdmobile://virtual?params={"des":"productList", "keyWord":"#pasteboardContent",
-      "from":"search", "category":"jump"}'}
+  backgroundStyle: BingButtonBackgroundStyle
+  action: { openURL: https://cn.bing.com/search?q=#selectText }
 
-4_ButtonBackgroundStyle:
+BingButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG7
-  highlightImage:
-    file: 图标
-    image: IMG7
+  normalImage: { file: 图标, image: IMG4 }
+  highlightImage: { file: 图标, image: IMG4 }
   <<: *ub
 
-5_Button:
+GoogleButton:
   size:
     height: 1/4
-  backgroundStyle: 5_ButtonBackgroundStyle
-  action: {openURL: snssdk1128://search?keyword=#pasteboardContent}
+  backgroundStyle: GoogleButtonBackgroundStyle
+  action: { openURL: https://www.google.com/search?q=#selectText }
 
-5_ButtonBackgroundStyle:
+GoogleButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG5
-  highlightImage:
-    file: 图标
-    image: IMG5
+  normalImage: { file: 图标, image: IMG1 }
+  highlightImage: { file: 图标, image: IMG1 }
   <<: *ub
 
-6_Button:
+TaobaoButton:
   size:
     height: 1/4
-  backgroundStyle: 6_ButtonBackgroundStyle
-  action: {openURL: xhsdiscover://search/result?keyword=#pasteboardContent}
+  backgroundStyle: TaobaoButtonBackgroundStyle
+  action: { openURL: taobao://s.taobao.com?q=#pasteboardContent }
 
-6_ButtonBackgroundStyle:
+TaobaoButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG9
-  highlightImage:
-    file: 图标
-    image: IMG9
+  normalImage: { file: 图标, image: IMG8 }
+  highlightImage: { file: 图标, image: IMG8 }
   <<: *ub
 
-7_Button:
+JDButton:
   size:
     height: 1/4
-  backgroundStyle: 7_ButtonBackgroundStyle
-  action: {openURL: zhihu://search?q=#pasteboardContent}
+  backgroundStyle: JDButtonBackgroundStyle
+  action: { openURL: 'openapp.jdmobile://virtual?params={"des":"productList", "keyWord":"#pasteboardContent", "from":"search", "category":"jump"}' }
 
-7_ButtonBackgroundStyle:
+JDButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG10
-  highlightImage:
-    file: 图标
-    image: IMG10
+  normalImage: { file: 图标, image: IMG7 }
+  highlightImage: { file: 图标, image: IMG7 }
   <<: *ub
 
-8_Button:
+GaodeButton:
   size:
     height: 1/4
-  backgroundStyle: 8_ButtonBackgroundStyle
-  action: {openURL: bilibili://search?keyword=#pasteboardContent}
+  backgroundStyle: GaodeButtonBackgroundStyle
+  action: { openURL: iosamap://poi?sourceApplication=applicationName&name=#pasteboardContent }
 
-8_ButtonBackgroundStyle:
+GaodeButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG3
-  highlightImage:
-    file: 图标
-    image: IMG3
+  normalImage: { file: 图标, image: IMG6 }
+  highlightImage: { file: 图标, image: IMG6 }
   <<: *ub
 
-9_Button:
+WechatButton:
   size:
     height: 1/4
-  backgroundStyle: 9_ButtonBackgroundStyle
-  action: {openURL: iosamap://poi?sourceApplication=applicationName&name=#pasteboardContent}
+  backgroundStyle: WechatButtonBackgroundStyle
+  action: { openURL: wechat://scanqrcode }
 
-9_ButtonBackgroundStyle:
+WechatButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG6
-  highlightImage:
-    file: 图标
-    image: IMG6
+  normalImage: { file: 图标, image: IMG9 }
+  highlightImage: { file: 图标, image: IMG9 }
   <<: *ub
 
-10_Button:
+AlipayButton:
   size:
     height: 1/4
-  backgroundStyle: 10_ButtonBackgroundStyle
-  action: {openURL: baidumap://map/place/search?query=#pasteboardContent}
+  backgroundStyle: AlipayButtonBackgroundStyle
+  action: { openURL: alipayqr://platformapi/startapp?saId=10000007 }
 
-10_ButtonBackgroundStyle:
+AlipayButtonBackgroundStyle:
   animation: animation
-  normalImage:
-    file: 图标
-    image: IMG2
-  highlightImage:
-    file: 图标
-    image: IMG2
+  normalImage: { file: 图标, image: IMG10 }
+  highlightImage: { file: 图标, image: IMG10 }
   <<: *ub
 
 # 按键背景动画

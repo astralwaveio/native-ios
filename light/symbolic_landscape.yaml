@@ -567,7 +567,7 @@ collectionCellForegroundStyle:
 #详情页
 descriptionCollection:
   size:
-    #width: 315/375
+  #width: 315/375
   backgroundStyle: descriptionCollectionButtonBackgroundStyle
   type: subClassifiedSymbols
   cellStyle: descriptionCollectionStyle
@@ -605,7 +605,7 @@ returnButtonForegroundStyle:
 
 pageUpButton:
   size:
-    #width: 85/375
+  #width: 85/375
   backgroundStyle: systemButtonBackgroundStyle
   foregroundStyle: pageUpButtonForegroundStyle
   action: pageUp
@@ -621,7 +621,7 @@ pageUpButtonForegroundStyle:
 
 pageDownButton:
   size:
-    #width: 85/375
+  #width: 85/375
   backgroundStyle: systemButtonBackgroundStyle
   foregroundStyle: pageDownButtonForegroundStyle
   action: pageDown
@@ -633,7 +633,7 @@ pageDownButtonForegroundStyle:
 
 lockButton:
   size:
-    #width: 85/375
+  #width: 85/375
   backgroundStyle: |-
     // JavaScript
     function getText() {
@@ -1340,7 +1340,7 @@ dataSource:
       ÿ,
     ]
   拼音:
-    [ā, á, ǎ, à, ō, ó, ǒ, ò, ē, é, ě, è, ī, í, ǐ, ì, ū, ú, ǔ, ù, ǖ, ǘ, ǚ, ǜ, ü]
+    [ ā, á, ǎ, à, ō, ó, ǒ, ò, ē, é, ě, è, ī, í, ǐ, ì, ū, ú, ǔ, ù, ǖ, ǘ, ǚ, ǜ, ü ]
   数学:
     [
       "=",

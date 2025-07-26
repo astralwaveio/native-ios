@@ -1,6 +1,6 @@
 按键背景: &key_bg
   type: original
-  insets: {top: 5, left: 3, bottom: 5, right: 3}
+  insets: { top: 5, left: 3, bottom: 5, right: 3 }
   normalColor: '555555'
   highlightColor: 707070
   cornerRadius: 7
@@ -38,7 +38,7 @@ floatTargetScale:
   y: 0.4
 
 keyboardStyle:
-  insets: {top: 8, left: 8, bottom: 8, right: 8}
+  insets: { top: 8, left: 8, bottom: 8, right: 8 }
   backgroundStyle: keyboardBackgroundStyle
 
 keyboardBackgroundStyle:
@@ -55,7 +55,7 @@ keyboardBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 简繁ForegroundStyle
-  action: {sendKeys: Control+o}
+  action: { sendKeys: Control+o }
 
 ButtonBackgroundStyle:
   animation: animation
@@ -76,7 +76,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 全半ForegroundStyle
-  action: {sendKeys: Shift+space}
+  action: { sendKeys: Shift+space }
 
 全半ForegroundStyle:
   animation: animation
@@ -93,7 +93,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 中英标点ForegroundStyle
-  action: {sendKeys: Control+period}
+  action: { sendKeys: Control+period }
 
 中英标点ForegroundStyle:
   animation: animation
@@ -110,7 +110,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 拼音ForegroundStyle
-  action: {sendKeys: Control+p}
+  action: { sendKeys: Control+p }
 
 拼音ForegroundStyle:
   animation: animation
@@ -127,7 +127,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 字集ForegroundStyle
-  action: {sendKeys: Control+h}
+  action: { sendKeys: Control+h }
 
 字集ForegroundStyle:
   animation: animation
@@ -144,7 +144,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 词组ForegroundStyle
-  action: {sendKeys: Control+k}
+  action: { sendKeys: Control+k }
 
 词组ForegroundStyle:
   animation: animation
@@ -161,7 +161,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 表情ForegroundStyle
-  action: {sendKeys: Control+i}
+  action: { sendKeys: Control+i }
 
 表情ForegroundStyle:
   animation: animation
@@ -178,7 +178,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 拆分ForegroundStyle
-  action: {sendKeys: Shift+Control+j}
+  action: { sendKeys: Shift+Control+j }
 
 拆分ForegroundStyle:
   animation: animation
@@ -198,7 +198,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 预测ForegroundStyle
-  action: {sendKeys: Control+y}
+  action: { sendKeys: Control+y }
 
 预测ForegroundStyle:
   animation: animation
@@ -215,7 +215,7 @@ ButtonBackgroundStyle:
   backgroundStyle: ButtonBackgroundStyle
   foregroundStyle:
     - 内嵌ForegroundStyle
-  action: {shortcutCommand: '#toggleEmbeddedInputMode'}
+  action: { shortcutCommand: '#toggleEmbeddedInputMode' }
 
 内嵌ForegroundStyle:
   animation: animation
