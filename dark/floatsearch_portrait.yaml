@@ -8,7 +8,7 @@ keyboardLayout:
         - Cell: YouTubeButton
         - Cell: BilibiliButton
         - Cell: DouyinButton
-        - Cell: BingButton
+        - Cell: MTeamButton
         - Cell: GoogleButton
   - HStack:
       subviews:
@@ -70,13 +70,13 @@ DouyinButtonBackgroundStyle:
   highlightImage: { file: 图标, image: IMG5 }
   <<: *ub
 
-BingButton:
+MTeamButton:
   size:
     height: 1/4
-  backgroundStyle: BingButtonBackgroundStyle
-  action: { openURL: https://cn.bing.com/search?q=#selectText }
+  backgroundStyle: MTeamButtonBackgroundStyle
+  action: { openURL: https://kp.m-team.cc/browse?keyword=#selectText }
 
-BingButtonBackgroundStyle:
+MTeamButtonBackgroundStyle:
   animation: animation
   normalImage: { file: 图标, image: IMG4 }
   highlightImage: { file: 图标, image: IMG4 }
@@ -134,7 +134,7 @@ WechatButton:
   size:
     height: 1/4
   backgroundStyle: WechatButtonBackgroundStyle
-  action: { openURL: wechat://scanqrcode }
+  action: { openURL: weixin://scanqrcode }
 
 WechatButtonBackgroundStyle:
   animation: animation
@@ -146,7 +146,7 @@ AlipayButton:
   size:
     height: 1/4
   backgroundStyle: AlipayButtonBackgroundStyle
-  action: { openURL: alipayqr://platformapi/startapp?saId=10000007 }
+  action: { openURL: alipays://platformapi/startapp?saId=10000007 }
 
 AlipayButtonBackgroundStyle:
   animation: animation
